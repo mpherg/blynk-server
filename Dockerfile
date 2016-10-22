@@ -10,11 +10,15 @@ RUN mkdir /data
 # Place symbolic link to server config file so that this can be persisted in /data
 RUN ln -s /data/server.properties /blynk/server.properties
 
-# By default, mobile application uses port 8443 and is based on SSL/TLS
-# sockets. Default hardware port is 8442 and is based on plain TCP/IP
-# sockets.
-# Blynk server also has administration panel where you could monitor your 
-# server. It could be accessible with URL https://your_ip:7443/admin
-EXPOSE 7443 8442 8443
+# IP port listing:
+# 8443: Application mutual ssl/tls port
+# 8442: Hardware plain tcp/ip port
+# 8441: Hardware ssl/tls port (for hardware that supports SSL/TLS sockets)
+# 8081: Web socket ssl/tls port
+# 8082: Web sockets plain tcp/ip port
+# 9443: HTTPS port
+# 8080: HTTP port
+# 7443: Administration UI HTTPS port
+EXPOSE 7443 8080 8081 8082 8441 8442 8443 9443
 WORKDIR /data
 ENTRYPOINT ["java", "-jar", "/blynk/server.jar", "-dataFolder", "/data"]
