@@ -10,7 +10,7 @@ RUN mkdir /data
 
 # Create configuration folder. To persist data, map a file to /config/server.properties
 RUN mkdir /config && touch /config/server.properties
-VOLUME ["/config"]
+VOLUME ["/config", "/data/backup"]
 
 # IP port listing:
 # 8443: Application mutual ssl/tls port
