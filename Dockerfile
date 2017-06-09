@@ -1,7 +1,7 @@
 FROM java:8-jre
 MAINTAINER Michael Ferguson <mpherg@gmail.com>
 
-ENV BLYNK_SERVER_VERSION 0.23.5
+ENV BLYNK_SERVER_VERSION 0.24.6
 RUN mkdir /blynk
 RUN curl -L https://github.com/blynkkk/blynk-server/releases/download/v${BLYNK_SERVER_VERSION}/server-${BLYNK_SERVER_VERSION}.jar > /blynk/server.jar
 
