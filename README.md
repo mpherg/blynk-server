@@ -19,7 +19,7 @@ docker run mpherg/blynk-server:latest
 To forward IP ports from the host to the container, do this:
 
 ```sh
-docker run -p 7443:7443 -p 8443:8443 mpherg/blynk-server:latest
+docker run -p 8441:8441 -p 8442:8442 -p 9443:9443 mpherg/blynk-server:latest
 ```
 
 To persist data, mount a directory into the container:
