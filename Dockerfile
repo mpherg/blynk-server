@@ -1,9 +1,9 @@
 FROM java:9-jre
 MAINTAINER Michael Ferguson <mpherg@gmail.com>
 
-ENV BLYNK_SERVER_VERSION 0.33.4
+ENV BLYNK_SERVER_VERSION 0.36.4
 RUN mkdir /blynk
-RUN curl -L https://github.com/blynkkk/blynk-server/releases/download/v${BLYNK_SERVER_VERSION}/server-${BLYNK_SERVER_VERSION}.jar > /blynk/server.jar
+RUN curl -L https://github.com/blynkkk/blynk-server/releases/download/v${BLYNK_SERVER_VERSION}/server-${BLYNK_SERVER_VERSION}-java8.jar > /blynk/server.jar
 
 # Create data folder. To persist data, map a volume to /data
 RUN mkdir /data
