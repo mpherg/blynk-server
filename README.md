@@ -1,5 +1,7 @@
 # Blynk Server Docker Image
 
+[![](https://images.microbadger.com/badges/image/kropochev/blynk-server.svg)](https://microbadger.com/images/kropochev/blynk-server "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/kropochev/blynk-server.svg)](https://microbadger.com/images/kropochev/blynk-server "Get your own version badge on microbadger.com")
+
 Runs your own [Blynk Server](https://github.com/blynkkk/blynk-server) in a Docker container instead of relying on Blynk's public server.
 
 [Blynk](http://www.blynk.cc) is the "first drag-n-drop IoT app builder for Arduino, Raspberry Pi, ESP8266, SparkFun boards, and others." Super fun.
