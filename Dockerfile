@@ -1,4 +1,4 @@
-FROM openjdk:10-jre
+FROM openjdk:11-jre
 MAINTAINER Michael Ferguson <mpherg@gmail.com>
 
 ENV BLYNK_SERVER_VERSION 0.39.0
